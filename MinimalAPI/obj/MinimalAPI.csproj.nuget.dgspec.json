@@ -1,37 +1,29 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Documents\\DotNetCore\\MinimalAPI\\MinimalAPI.csproj": {}
+    "/Users/ken/Projects/learning_pj/dotnetcore/MinimalAPI/MinimalAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Documents\\DotNetCore\\Database\\Database.csproj": {
+    "/Users/ken/Projects/learning_pj/dotnetcore/Database/Database.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Documents\\DotNetCore\\Database\\Database.csproj",
+        "projectUniqueName": "/Users/ken/Projects/learning_pj/dotnetcore/Database/Database.csproj",
         "projectName": "Database",
-        "projectPath": "C:\\Users\\user\\Documents\\DotNetCore\\Database\\Database.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Documents\\DotNetCore\\Database\\obj\\",
+        "projectPath": "/Users/ken/Projects/learning_pj/dotnetcore/Database/Database.csproj",
+        "packagesPath": "/Users/ken/.nuget/packages/",
+        "outputPath": "/Users/ken/Projects/learning_pj/dotnetcore/Database/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/ken/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
-            "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {}
           }
@@ -46,11 +38,10 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.300"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net10.0": {
-          "framework": "net10.0",
           "targetAlias": "net10.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
@@ -90,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.200/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -368,38 +359,30 @@
         }
       }
     },
-    "C:\\Users\\user\\Documents\\DotNetCore\\MinimalAPI\\MinimalAPI.csproj": {
+    "/Users/ken/Projects/learning_pj/dotnetcore/MinimalAPI/MinimalAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Documents\\DotNetCore\\MinimalAPI\\MinimalAPI.csproj",
+        "projectUniqueName": "/Users/ken/Projects/learning_pj/dotnetcore/MinimalAPI/MinimalAPI.csproj",
         "projectName": "MinimalAPI",
-        "projectPath": "C:\\Users\\user\\Documents\\DotNetCore\\MinimalAPI\\MinimalAPI.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Documents\\DotNetCore\\MinimalAPI\\obj\\",
+        "projectPath": "/Users/ken/Projects/learning_pj/dotnetcore/MinimalAPI/MinimalAPI.csproj",
+        "packagesPath": "/Users/ken/.nuget/packages/",
+        "outputPath": "/Users/ken/Projects/learning_pj/dotnetcore/MinimalAPI/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/ken/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
-            "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\user\\Documents\\DotNetCore\\Database\\Database.csproj": {
-                "projectPath": "C:\\Users\\user\\Documents\\DotNetCore\\Database\\Database.csproj"
+              "/Users/ken/Projects/learning_pj/dotnetcore/Database/Database.csproj": {
+                "projectPath": "/Users/ken/Projects/learning_pj/dotnetcore/Database/Database.csproj"
               }
             }
           }
@@ -414,11 +397,10 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.300"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net10.0": {
-          "framework": "net10.0",
           "targetAlias": "net10.0",
           "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
@@ -449,7 +431,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.200/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
