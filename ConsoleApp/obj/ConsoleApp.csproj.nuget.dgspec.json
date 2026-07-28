@@ -64,6 +64,10 @@
               "target": "Package",
               "version": "[13.0.4, )"
             },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[114.0.0, )"
+            },
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.9.1, )"
