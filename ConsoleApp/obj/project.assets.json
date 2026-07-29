@@ -575,6 +575,71 @@
           }
         }
       },
+      "ReactiveUI.Disposables/7.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/ReactiveUI.Disposables.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/ReactiveUI.Disposables.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "ReactiveUI.Primitives/7.0.0": {
+        "type": "package",
+        "dependencies": {
+          "ReactiveUI.Disposables": "7.0.0",
+          "ReactiveUI.Primitives.Core": "7.0.0"
+        },
+        "compile": {
+          "lib/net10.0/ReactiveUI.Primitives.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/ReactiveUI.Primitives.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "ReactiveUI.Primitives.Core/7.0.0": {
+        "type": "package",
+        "dependencies": {
+          "ReactiveUI.Disposables": "7.0.0"
+        },
+        "compile": {
+          "lib/net10.0/ReactiveUI.Primitives.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/ReactiveUI.Primitives.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Refit/14.0.1": {
+        "type": "package",
+        "dependencies": {
+          "ReactiveUI.Primitives": "7.0.0"
+        },
+        "compile": {
+          "lib/net10.0/Refit.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Refit.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netstandard2.0/refit.props": {}
+        }
+      },
       "RestSharp/114.0.0": {
         "type": "package",
         "compile": {
@@ -1634,6 +1699,159 @@
         "packageIcon.png"
       ]
     },
+    "ReactiveUI.Disposables/7.0.0": {
+      "sha512": "bl3hwVjnuNP40UedJADZ3+842qu39iMkdS/kq86mKrGubnBZA75TSSmTpOwQFvo4JLIR+8Qm3yY/MOnm+uAh7g==",
+      "type": "package",
+      "path": "reactiveui.disposables/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE/LICENSE",
+        "README.md",
+        "lib/net10.0/ReactiveUI.Disposables.dll",
+        "lib/net10.0/ReactiveUI.Disposables.xml",
+        "lib/net11.0/ReactiveUI.Disposables.dll",
+        "lib/net11.0/ReactiveUI.Disposables.xml",
+        "lib/net462/ReactiveUI.Disposables.dll",
+        "lib/net462/ReactiveUI.Disposables.xml",
+        "lib/net472/ReactiveUI.Disposables.dll",
+        "lib/net472/ReactiveUI.Disposables.xml",
+        "lib/net48/ReactiveUI.Disposables.dll",
+        "lib/net48/ReactiveUI.Disposables.xml",
+        "lib/net481/ReactiveUI.Disposables.dll",
+        "lib/net481/ReactiveUI.Disposables.xml",
+        "lib/net8.0/ReactiveUI.Disposables.dll",
+        "lib/net8.0/ReactiveUI.Disposables.xml",
+        "lib/net9.0/ReactiveUI.Disposables.dll",
+        "lib/net9.0/ReactiveUI.Disposables.xml",
+        "logo.png",
+        "reactiveui.disposables.7.0.0.nupkg.sha512",
+        "reactiveui.disposables.nuspec"
+      ]
+    },
+    "ReactiveUI.Primitives/7.0.0": {
+      "sha512": "B5WlTZhtHE2gRyX/W0kfW8CwKe9A58KmZsWuIxjyxjAUcVbUP2QDutxT908KCkz/K9H11oS6/85XmIm20tYogw==",
+      "type": "package",
+      "path": "reactiveui.primitives/7.0.0",
+      "files": [
+        ".agents/skills/reactiveui-primitives/SKILL.md",
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE/LICENSE",
+        "README.md",
+        "Skill.md",
+        "lib/net10.0-android36.0/ReactiveUI.Primitives.dll",
+        "lib/net10.0-android36.0/ReactiveUI.Primitives.xml",
+        "lib/net10.0-ios26.0/ReactiveUI.Primitives.dll",
+        "lib/net10.0-ios26.0/ReactiveUI.Primitives.xml",
+        "lib/net10.0-maccatalyst26.0/ReactiveUI.Primitives.dll",
+        "lib/net10.0-maccatalyst26.0/ReactiveUI.Primitives.xml",
+        "lib/net10.0-macos26.0/ReactiveUI.Primitives.dll",
+        "lib/net10.0-macos26.0/ReactiveUI.Primitives.xml",
+        "lib/net10.0-tvos26.0/ReactiveUI.Primitives.dll",
+        "lib/net10.0-tvos26.0/ReactiveUI.Primitives.xml",
+        "lib/net10.0/ReactiveUI.Primitives.dll",
+        "lib/net10.0/ReactiveUI.Primitives.xml",
+        "lib/net11.0-android37.0/ReactiveUI.Primitives.dll",
+        "lib/net11.0-android37.0/ReactiveUI.Primitives.xml",
+        "lib/net11.0-ios26.5/ReactiveUI.Primitives.dll",
+        "lib/net11.0-ios26.5/ReactiveUI.Primitives.xml",
+        "lib/net11.0-maccatalyst26.5/ReactiveUI.Primitives.dll",
+        "lib/net11.0-maccatalyst26.5/ReactiveUI.Primitives.xml",
+        "lib/net11.0-macos26.5/ReactiveUI.Primitives.dll",
+        "lib/net11.0-macos26.5/ReactiveUI.Primitives.xml",
+        "lib/net11.0-tvos26.5/ReactiveUI.Primitives.dll",
+        "lib/net11.0-tvos26.5/ReactiveUI.Primitives.xml",
+        "lib/net11.0/ReactiveUI.Primitives.dll",
+        "lib/net11.0/ReactiveUI.Primitives.xml",
+        "lib/net462/ReactiveUI.Primitives.dll",
+        "lib/net462/ReactiveUI.Primitives.xml",
+        "lib/net472/ReactiveUI.Primitives.dll",
+        "lib/net472/ReactiveUI.Primitives.xml",
+        "lib/net48/ReactiveUI.Primitives.dll",
+        "lib/net48/ReactiveUI.Primitives.xml",
+        "lib/net481/ReactiveUI.Primitives.dll",
+        "lib/net481/ReactiveUI.Primitives.xml",
+        "lib/net8.0/ReactiveUI.Primitives.dll",
+        "lib/net8.0/ReactiveUI.Primitives.xml",
+        "lib/net9.0/ReactiveUI.Primitives.dll",
+        "lib/net9.0/ReactiveUI.Primitives.xml",
+        "logo.png",
+        "reactiveui.primitives.7.0.0.nupkg.sha512",
+        "reactiveui.primitives.nuspec"
+      ]
+    },
+    "ReactiveUI.Primitives.Core/7.0.0": {
+      "sha512": "0Bndf1vnhZOWIcVVH+mNvML8jIw9oRes8tgU25OoEJEuFLdMAOUAlMgOnvt4TYkeqtL/vSck8qCF9GmtAN/5BQ==",
+      "type": "package",
+      "path": "reactiveui.primitives.core/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE/LICENSE",
+        "README.md",
+        "lib/net10.0/ReactiveUI.Primitives.Core.dll",
+        "lib/net10.0/ReactiveUI.Primitives.Core.xml",
+        "lib/net11.0/ReactiveUI.Primitives.Core.dll",
+        "lib/net11.0/ReactiveUI.Primitives.Core.xml",
+        "lib/net462/ReactiveUI.Primitives.Core.dll",
+        "lib/net462/ReactiveUI.Primitives.Core.xml",
+        "lib/net472/ReactiveUI.Primitives.Core.dll",
+        "lib/net472/ReactiveUI.Primitives.Core.xml",
+        "lib/net48/ReactiveUI.Primitives.Core.dll",
+        "lib/net48/ReactiveUI.Primitives.Core.xml",
+        "lib/net481/ReactiveUI.Primitives.Core.dll",
+        "lib/net481/ReactiveUI.Primitives.Core.xml",
+        "lib/net8.0/ReactiveUI.Primitives.Core.dll",
+        "lib/net8.0/ReactiveUI.Primitives.Core.xml",
+        "lib/net9.0/ReactiveUI.Primitives.Core.dll",
+        "lib/net9.0/ReactiveUI.Primitives.Core.xml",
+        "logo.png",
+        "reactiveui.primitives.core.7.0.0.nupkg.sha512",
+        "reactiveui.primitives.core.nuspec"
+      ]
+    },
+    "Refit/14.0.1": {
+      "sha512": "8e1Y0LnkSc91kDZJ1dasL59LDssJE0JsrV8hiV6kd4LjSBR9DbX6zzGJCqxaBsm+aW7/mv6bsqI1vPtiYjqZfg==",
+      "type": "package",
+      "path": "refit/14.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE/LICENSE",
+        "README.md",
+        "analyzers/dotnet/roslyn4.8/cs/InterfaceStubGeneratorV2.dll",
+        "analyzers/dotnet/roslyn4.8/cs/Refit.Analyzers.dll",
+        "analyzers/dotnet/roslyn4.8/cs/Refit.CodeFixes.dll",
+        "analyzers/dotnet/roslyn5.0/cs/InterfaceStubGeneratorV3.dll",
+        "analyzers/dotnet/roslyn5.0/cs/Refit.Analyzers.dll",
+        "analyzers/dotnet/roslyn5.0/cs/Refit.CodeFixes.dll",
+        "buildTransitive/netstandard2.0/refit.props",
+        "lib/net10.0/Refit.dll",
+        "lib/net10.0/Refit.xml",
+        "lib/net11.0/Refit.dll",
+        "lib/net11.0/Refit.xml",
+        "lib/net462/Refit.dll",
+        "lib/net462/Refit.xml",
+        "lib/net47/Refit.dll",
+        "lib/net47/Refit.xml",
+        "lib/net471/Refit.dll",
+        "lib/net471/Refit.xml",
+        "lib/net472/Refit.dll",
+        "lib/net472/Refit.xml",
+        "lib/net48/Refit.dll",
+        "lib/net48/Refit.xml",
+        "lib/net481/Refit.dll",
+        "lib/net481/Refit.xml",
+        "lib/net8.0/Refit.dll",
+        "lib/net8.0/Refit.xml",
+        "lib/net9.0/Refit.dll",
+        "lib/net9.0/Refit.xml",
+        "logo.png",
+        "refit.14.0.1.nupkg.sha512",
+        "refit.nuspec"
+      ]
+    },
     "RestSharp/114.0.0": {
       "sha512": "8pDO4q+K8nIqXbvGCb9ciKcngj36pCXGRDzOYPEPoS2IvBIL+mejmUMAtSNALt/NkDc9LQmHvM95kdniLSbGtg==",
       "type": "package",
@@ -1968,6 +2186,7 @@
       "Microsoft.EntityFrameworkCore >= 10.0.10",
       "Microsoft.EntityFrameworkCore.SqlServer >= 10.0.10",
       "Newtonsoft.Json >= 13.0.4",
+      "Refit >= 14.0.1",
       "RestSharp >= 114.0.0",
       "Shared >= 1.0.0",
       "System.Data.SqlClient >= 4.9.1"
@@ -2035,6 +2254,10 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.4, )"
+          },
+          "Refit": {
+            "target": "Package",
+            "version": "[14.0.1, )"
           },
           "RestSharp": {
             "target": "Package",

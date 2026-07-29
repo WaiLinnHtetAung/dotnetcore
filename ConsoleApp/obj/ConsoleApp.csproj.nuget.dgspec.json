@@ -64,6 +64,10 @@
               "target": "Package",
               "version": "[13.0.4, )"
             },
+            "Refit": {
+              "target": "Package",
+              "version": "[14.0.1, )"
+            },
             "RestSharp": {
               "target": "Package",
               "version": "[114.0.0, )"

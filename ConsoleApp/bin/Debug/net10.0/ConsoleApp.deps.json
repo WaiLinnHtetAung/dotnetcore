@@ -12,6 +12,8 @@
           "Microsoft.EntityFrameworkCore": "10.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "10.0.10",
           "Newtonsoft.Json": "13.0.4",
+          "Refit": "14.0.1",
+          "RestSharp": "114.0.0",
           "Shared": "1.0.0",
           "System.Data.SqlClient": "4.9.1"
         },
@@ -416,6 +418,56 @@
           }
         }
       },
+      "ReactiveUI.Disposables/7.0.0": {
+        "runtime": {
+          "lib/net10.0/ReactiveUI.Disposables.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.0.0"
+          }
+        }
+      },
+      "ReactiveUI.Primitives/7.0.0": {
+        "dependencies": {
+          "ReactiveUI.Disposables": "7.0.0",
+          "ReactiveUI.Primitives.Core": "7.0.0"
+        },
+        "runtime": {
+          "lib/net10.0/ReactiveUI.Primitives.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.0.0"
+          }
+        }
+      },
+      "ReactiveUI.Primitives.Core/7.0.0": {
+        "dependencies": {
+          "ReactiveUI.Disposables": "7.0.0"
+        },
+        "runtime": {
+          "lib/net10.0/ReactiveUI.Primitives.Core.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.0.0"
+          }
+        }
+      },
+      "Refit/14.0.1": {
+        "dependencies": {
+          "ReactiveUI.Primitives": "7.0.0"
+        },
+        "runtime": {
+          "lib/net10.0/Refit.dll": {
+            "assemblyVersion": "14.0.0.0",
+            "fileVersion": "14.0.1.0"
+          }
+        }
+      },
+      "RestSharp/114.0.0": {
+        "runtime": {
+          "lib/net10.0/RestSharp.dll": {
+            "assemblyVersion": "114.0.0.0",
+            "fileVersion": "114.0.0.0"
+          }
+        }
+      },
       "runtime.native.System.Data.SqlClient.sni/4.4.0": {
         "dependencies": {
           "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni": "4.4.0",
@@ -794,6 +846,41 @@
       "sha512": "sha512-pdgNNMai3zv51W5aq268sujXUyx7SNdE2bj1wZcWjAQrKMFZV260lbqYop1d2GM67JI1huLRwxo9ZqnfF/lC6A==",
       "path": "newtonsoft.json/13.0.4",
       "hashPath": "newtonsoft.json.13.0.4.nupkg.sha512"
+    },
+    "ReactiveUI.Disposables/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bl3hwVjnuNP40UedJADZ3+842qu39iMkdS/kq86mKrGubnBZA75TSSmTpOwQFvo4JLIR+8Qm3yY/MOnm+uAh7g==",
+      "path": "reactiveui.disposables/7.0.0",
+      "hashPath": "reactiveui.disposables.7.0.0.nupkg.sha512"
+    },
+    "ReactiveUI.Primitives/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-B5WlTZhtHE2gRyX/W0kfW8CwKe9A58KmZsWuIxjyxjAUcVbUP2QDutxT908KCkz/K9H11oS6/85XmIm20tYogw==",
+      "path": "reactiveui.primitives/7.0.0",
+      "hashPath": "reactiveui.primitives.7.0.0.nupkg.sha512"
+    },
+    "ReactiveUI.Primitives.Core/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0Bndf1vnhZOWIcVVH+mNvML8jIw9oRes8tgU25OoEJEuFLdMAOUAlMgOnvt4TYkeqtL/vSck8qCF9GmtAN/5BQ==",
+      "path": "reactiveui.primitives.core/7.0.0",
+      "hashPath": "reactiveui.primitives.core.7.0.0.nupkg.sha512"
+    },
+    "Refit/14.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8e1Y0LnkSc91kDZJ1dasL59LDssJE0JsrV8hiV6kd4LjSBR9DbX6zzGJCqxaBsm+aW7/mv6bsqI1vPtiYjqZfg==",
+      "path": "refit/14.0.1",
+      "hashPath": "refit.14.0.1.nupkg.sha512"
+    },
+    "RestSharp/114.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8pDO4q+K8nIqXbvGCb9ciKcngj36pCXGRDzOYPEPoS2IvBIL+mejmUMAtSNALt/NkDc9LQmHvM95kdniLSbGtg==",
+      "path": "restsharp/114.0.0",
+      "hashPath": "restsharp.114.0.0.nupkg.sha512"
     },
     "runtime.native.System.Data.SqlClient.sni/4.4.0": {
       "type": "package",
