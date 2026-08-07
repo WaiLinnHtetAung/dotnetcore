@@ -1,21 +1,21 @@
 
+using Microsoft.AspNetCore.Mvc;
+
 namespace MinimalAPI.EndPoints.Blog;
 
 public static class BlogEndPoint
 {
     public static void MapBlogEndPoints(this IEndpointRouteBuilder app)
     {
-        app.MapGet("/blogs", () =>
+        app.MapGet("/blogs", ([FromServices] AppDbContext dbContext) =>
         {
-            AppDbContext dbContext = new AppDbContext();
             var blogs = dbContext.TblBlogs.AsNoTracking().ToList();
             return Results.Ok(blogs);
         })
         .WithName("GetBlogs");
 
-        app.MapGet("/blogs/{id}", (int id) =>
+        app.MapGet("/blogs/{id}", ([FromServices] AppDbContext dbContext, int id) =>
         {
-            AppDbContext dbContext = new AppDbContext();
             var blog = dbContext.TblBlogs.AsNoTracking().FirstOrDefault(b => b.BlogId == id);
             if (blog == null)
             {
@@ -25,17 +25,15 @@ public static class BlogEndPoint
         })
         .WithName("GetBlogById");
 
-        app.MapPost("/blogs", (TblBlog blog) =>
+        app.MapPost("/blogs", ([FromServices] AppDbContext dbContext, TblBlog blog) =>
         {
-            AppDbContext dbContext = new AppDbContext();
             dbContext.TblBlogs.Add(blog);
             dbContext.SaveChanges();
             return Results.Created($"/blogs/{blog.BlogId}", blog);
         }).WithName("CreateBlog");
 
-        app.MapPut("/blogs/{id}", (int id, TblBlog updatedBlog) =>
+        app.MapPut("/blogs/{id}", ([FromServices] AppDbContext dbContext, int id, TblBlog updatedBlog) =>
         {
-            AppDbContext dbContext = new AppDbContext();
             var blog = dbContext.TblBlogs.FirstOrDefault(b => b.BlogId == id);
             if (blog == null)
             {
@@ -49,9 +47,8 @@ public static class BlogEndPoint
             return Results.NoContent();
         }).WithName("UpdateBlog");
 
-        app.MapDelete("/blogs/{id}", (int id) =>
+        app.MapDelete("/blogs/{id}", ([FromServices] AppDbContext dbContext, int id) =>
         {
-            AppDbContext dbContext = new AppDbContext();
             var blog = dbContext.TblBlogs.FirstOrDefault(b => b.BlogId == id);
             if (blog == null)
             {

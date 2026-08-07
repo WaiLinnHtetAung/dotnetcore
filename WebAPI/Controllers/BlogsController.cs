@@ -9,7 +9,12 @@ namespace WebAPI.Controllers
     [ApiController]
     public class BlogsController : ControllerBase
     {
-        AppDbContext _dbContext = new AppDbContext();
+        private readonly AppDbContext _dbContext;
+
+        public BlogsController(AppDbContext dbContext)
+        {
+            _dbContext = dbContext;
+        }
 
         [HttpGet]
         public IActionResult GetBlogs()

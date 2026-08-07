@@ -12,10 +12,11 @@ namespace WebAPI.Controllers;
 public class BlogServiceController : ControllerBase
 {
     private readonly BlogsService _blogService;
-    public BlogServiceController()
+    public BlogServiceController(BlogsService service)
     {
-        _blogService = new BlogsService();
+        _blogService = service;
     }
+    
     [HttpGet]
     public IActionResult GetBlogs()
     {

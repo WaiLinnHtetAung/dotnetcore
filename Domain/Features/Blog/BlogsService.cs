@@ -6,7 +6,12 @@ namespace Domain.Features.Blog;
 
 public class BlogsService
 {
-    private readonly AppDbContext _db = new AppDbContext();
+    private readonly AppDbContext _db ;
+
+    public BlogsService(AppDbContext db)
+    {
+        _db = db;
+    }
 
     public List<TblBlog> GetBlogs()
     {

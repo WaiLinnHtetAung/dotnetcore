@@ -6,9 +6,6 @@ namespace Database.Models;
 
 public partial class AppDbContext : DbContext
 {
-    public AppDbContext()
-    {
-    }
 
     public AppDbContext(DbContextOptions<AppDbContext> options)
         : base(options)
@@ -17,8 +14,8 @@ public partial class AppDbContext : DbContext
 
     public virtual DbSet<TblBlog> TblBlogs { get; set; }
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseSqlServer("Server=127.0.0.1,1433;Database=dotnet;User Id=sa;Password=saPassword2026;TrustServerCertificate=True;");
+    // protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    //     => optionsBuilder.UseSqlServer("Server=127.0.0.1,1433;Database=dotnet;User Id=sa;Password=saPassword2026;TrustServerCertificate=True;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
